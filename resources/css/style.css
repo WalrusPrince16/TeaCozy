@@ -1,4 +1,8 @@
 /* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: Helvetica;
   font-size: 22px;
@@ -6,10 +10,67 @@ body {
   background-color: black;
   opacity: 0.9;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 a {
   text-decoration: underline;
+  color: seashell;
 }
 footer {
   text-align: left;
+}
+
+/* Header */
+#header {
+  position: relative;
+  top: 0;
+  position: fixed;
+  background-color: inherit;
+  z-index: 1;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header img {
+  height: 50px;
+  margin-left: 10px;
+  padding: 9.5 0;
+}
+#header a {
+  padding: 13.5px 10px;
+  margin-right: 10px;
+}
+
+/* Our Mission Section */
+#ourMission {
+  position: relative;
+  top: 69px;
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../resources/images/img-mission-background.jpg");
+}
+
+/* Tea of the Month */
+#teaOfTheMonth {
+  width: 1000px;
+}
+
+/* Locations */
+#locations {
+  width: 1200px;
+  height: 500px;
+  background-image: url();
+}
+
+/* Contact */
+#contact {
+  height: 200px;
 }
