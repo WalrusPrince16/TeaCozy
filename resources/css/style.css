@@ -27,17 +27,21 @@ footer {
   position: relative;
   top: 0;
   position: fixed;
-  background-color: inherit;
   z-index: 1;
+
   height: 69px;
   width: 100%;
+
   border-bottom: 1px solid seashell;
+  background-color: inherit;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 #header img {
   height: 50px;
+
   margin-left: 10px;
   padding: 9.5 0;
 }
@@ -50,12 +54,26 @@ footer {
 #ourMission {
   position: relative;
   top: 69px;
+
   width: 1200px;
   height: 700px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   background-image: url("../../resources/images/img-mission-background.jpg");
+}
+#ourMission .textBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: black;
+  padding: 10px;
+}
+#ourMission h2 {
+  margin-bottom: 20px;
 }
 
 /* Tea of the Month */
