@@ -1,0 +1,15 @@
+/* Universal Styles */
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+a {
+  text-decoration: underline;
+}
+footer {
+  text-align: left;
+}
