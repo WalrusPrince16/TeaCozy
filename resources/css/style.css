@@ -9,10 +9,6 @@ body {
   color: seashell;
   background-color: black;
   opacity: 0.9;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 a {
   text-decoration: underline;
@@ -20,19 +16,30 @@ a {
 }
 footer {
   text-align: left;
+  padding-left: 20px;
+}
+h2, h4, h5 {
+  margin-bottom: 20px;
+}
+
+/* Main content container */
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Header */
 
 #header {
-  position: relative;
   top: 0;
   position: fixed;
   z-index: 1;
   height: 69px;
   width: 100%;
   border-bottom: 1px solid seashell;
-  background-color: inherit;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,7 +54,9 @@ footer {
   margin-right: 10px;
 }
 
-/* Our Mission Section */
+
+/* Our Mission */
+
 #ourMission {
   position: relative;
   top: 69px;
@@ -63,12 +72,9 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   background-color: black;
   padding: 10px;
-}
-#ourMission h2 {
-  margin-bottom: 20px;
 }
 
 /* Tea of the Month */
@@ -84,9 +90,6 @@ footer {
   flex-direction: column;
   align-content: center;
 }
-#teaOfTheMonth h2, #teaOfTheMonth h4 {
-  margin-bottom: 20px;
-}
 #teaOfTheMonth img {
   width: 300px;
   height: 200px;
@@ -96,13 +99,40 @@ footer {
 /* Locations */
 
 #locations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 40px 0;
   width: 1200px;
   height: 500px;
-  background-image: url();
+  background-image: url("../../resources/images/img-locations-background.jpg");
+}
+.location {
+  padding: 10px;
+  opacity: 1;
+  width: 300px;
+  margin: 15px 20px;
+  background-color: black;
+  margin-bottom: 60px;
+}
+#locations h2 {
+  width: 100%;
+  margin-bottom: 0;
 }
 
 /* Contact */
 
 #contact {
   height: 200px;
+  margin-bottom: 30px;
+}
+h5 {
+  margin: 30px 0;
+}
+
+/* Footer */
+footer h5 {
+  margin-bottom: 15px;
 }
